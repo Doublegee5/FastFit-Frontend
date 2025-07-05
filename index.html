@@ -6,59 +6,74 @@
   <title>FastFit - Emotion Driven Fitness</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
 
-  <!-- HERO -->
-  <section class="text-center py-20 bg-gradient-to-b from-green-200 to-white">
-    <h1 class="text-4xl font-bold mb-4">FastFit 💪</h1>
-    <p class="text-xl max-w-xl mx-auto">
+  <!-- HERO SECTION -->
+  <section class="text-center py-24 bg-gradient-to-br from-green-300 via-white to-green-100">
+    <h1 class="text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">FastFit 💪</h1>
+    <p class="text-lg max-w-2xl mx-auto text-gray-700 font-medium">
       The world’s first emotion-driven fitness system. Powered by AI. Verified on Base.
     </p>
   </section>
 
   <!-- MOOD CHECK-IN -->
-  <section class="text-center py-12">
-    <h2 class="text-2xl font-semibold mb-6">How are you feeling today?</h2>
+  <section class="text-center py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold mb-4">How are you feeling today?</h2>
+    <p class="text-gray-600 mb-8">Tap your current mood to begin a personalized fitness journey.</p>
     <form id="moodForm" class="flex flex-wrap justify-center gap-4">
-      <button type="button" class="mood-btn bg-white px-6 py-3 border rounded shadow" value="energized">Energized</button>
-      <button type="button" class="mood-btn bg-white px-6 py-3 border rounded shadow" value="tired"> Tired</button>
-      <button type="button" class="mood-btn bg-white px-6 py-3 border rounded shadow" value="stressed">Stressed</button>
-      <button type="button" class="mood-btn bg-white px-6 py-3 border rounded shadow" value="motivated">Motivated</button>
-      <button type="button" class="mood-btn bg-white px-6 py-3 border rounded shadow" value="sad"> Sad</button>
+      <button type="button" class="mood-btn bg-white px-6 py-3 border border-gray-300 rounded-lg shadow-md hover:bg-green-100 transition" value="energized">⚡ Energized</button>
+      <button type="button" class="mood-btn bg-white px-6 py-3 border border-gray-300 rounded-lg shadow-md hover:bg-green-100 transition" value="tired">😴 Tired</button>
+      <button type="button" class="mood-btn bg-white px-6 py-3 border border-gray-300 rounded-lg shadow-md hover:bg-green-100 transition" value="stressed">😓 Stressed</button>
+      <button type="button" class="mood-btn bg-white px-6 py-3 border border-gray-300 rounded-lg shadow-md hover:bg-green-100 transition" value="motivated">🔥 Motivated</button>
+      <button type="button" class="mood-btn bg-white px-6 py-3 border border-gray-300 rounded-lg shadow-md hover:bg-green-100 transition" value="sad">😢 Sad</button>
     </form>
-    <p id="moodResult" class="mt-6 text-lg font-medium text-green-600"></p>
+    <p id="moodResult" class="mt-8 text-lg font-semibold text-green-600"></p>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="bg-white py-16 text-center">
-    <h2 class="text-2xl font-semibold mb-4">How FastFit Works</h2>
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 mt-8">
-      <div><span class="text-3xl">💬</span><p>Mood Check-In</p></div>
-      <div><span class="text-3xl">🏋️‍♀️</span><p>AI Workout</p></div>
-      <div><span class="text-3xl">🎖️</span><p>Earn Soulbound Badge</p></div>
-      <div><span class="text-3xl">💰</span><p>Get $FAST Tokens</p></div>
+  <section class="bg-gray-50 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">How FastFit Works</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-10">
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-2">💬</div>
+        <p class="font-medium text-gray-700">Mood Check-In</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-2">🏋️‍♀️</div>
+        <p class="font-medium text-gray-700">AI Workout</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-2">🎖️</div>
+        <p class="font-medium text-gray-700">Soulbound Badge</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+        <div class="text-4xl mb-2">💰</div>
+        <p class="font-medium text-gray-700">$FAST Token Rewards</p>
+      </div>
     </div>
   </section>
 
-  <!-- BADGES PREVIEW -->
-  <section class="bg-gray-100 py-16 text-center">
-    <h2 class="text-2xl font-semibold mb-4">Your Progress, Onchain</h2>
-    <p class="mb-6">Mint soulbound badges that represent your fitness + emotional growth.</p>
-    <img src="https://via.placeholder.com/300x200?text=NFT+Badge" alt="Badge Preview" class="mx-auto shadow-lg rounded">
+  <!-- BADGES -->
+  <section class="bg-white py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Your Progress, Onchain</h2>
+    <p class="text-gray-600 mb-8">Mint soulbound NFTs that reflect your fitness and emotional growth.</p>
+    <img src="https://via.placeholder.com/300x200?text=NFT+Badge" alt="Badge Preview" class="mx-auto rounded-lg shadow-xl border border-gray-200">
   </section>
 
-  <!-- JOIN THE MOVEMENT -->
-  <section class="py-16 text-center bg-white">
-    <h2 class="text-2xl font-semibold mb-4">Join the FastFit Movement</h2>
-    <p class="mb-6">Be among the first to earn fitness rewards and track emotional growth.</p>
-    <input type="email" placeholder="Your email" required class="border px-4 py-2 rounded shadow-md" />
-    <button class="bg-green-600 text-white px-6 py-2 rounded ml-2">Join</button>
+  <!-- JOIN SECTION -->
+  <section class="bg-green-100 py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-gray-800">Join the FastFit Movement</h2>
+    <p class="text-gray-700 mb-6">Be among the first to earn rewards and grow emotionally & physically.</p>
+    <div class="flex justify-center flex-wrap gap-2">
+      <input type="email" placeholder="Enter your email" class="w-72 px-4 py-3 border border-gray-300 rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-green-400" required />
+      <button class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition">Join Now</button>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white py-8 text-center">
+  <footer class="bg-gray-900 text-white py-10 text-center text-sm">
     <p>© 2025 FastFit Labs — Built on Base</p>
-    <p class="mt-2 text-sm">Follow us on Warpcast | Twitter | GitHub</p>
+    <p class="mt-2">Follow us on <span class="underline">Warpcast</span> | <span class="underline">Twitter</span> | <span class="underline">GitHub</span></p>
   </footer>
 
   <!-- JS -->
@@ -70,15 +85,14 @@
       btn.addEventListener('click', () => {
         const mood = btn.value;
 
-        // UI: disable all buttons while loading
+        // Disable UI while loading
         buttons.forEach(b => b.disabled = true);
         result.textContent = "🤖 Generating your workout...";
 
-        // Highlight selected mood
+        // Mood highlight
         buttons.forEach(b => b.classList.remove("bg-green-200"));
         btn.classList.add("bg-green-200");
 
-        // Fetch workout from backend (updated URL)
         fetch("https://fastfit-pmrw.onrender.com/api/ai/workout", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
