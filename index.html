@@ -86,7 +86,7 @@
         })
         .then(res => res.json())
         .then(data => {
-          result.textContent = data.workout || "No workout returned.";
+          result.textContent = data.workout?.trim() || "No workout returned.";
         })
         .catch(err => {
           console.error(err);
